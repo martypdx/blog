@@ -1,12 +1,30 @@
 doctype html
 html(lang="en")
 	head
-		title= title
+		title @martypdx blog
 		link(rel='stylesheet' type='text/css' href='css/style.css')
 		link(rel='stylesheet' type='text/css' href='css/solarized-light.css')
 	body
 		header
 			h1= title
-			h6= date
+			h6= date.toDateString()
 		main!= content
+		footer
+			#disqus_thread
+			script.
+				var disqus_config = function () {
+					this.page.title = "#{title}";
+				};
+
+				(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+
+				s.src = '//martypdx.disqus.com/embed.js';
+
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+
+			noscript Please enable JavaScript to view the
+				a(href='https://disqus.com/?ref_noscript' rel='nofollow') comments powered by Disqus.
 

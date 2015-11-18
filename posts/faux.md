@@ -7,7 +7,7 @@
 
 At its core, RactiveJS interpolates data into an html template and renders into the DOM and a specified location:
 
-```html
+```handlebars
 <h1>Hello {{world}}</h1>
 ```
 ### +
