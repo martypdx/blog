@@ -3,7 +3,7 @@
   date: '11/13/2015'
 }
 
-## Just javascript
+## Just javascript ftw
 
 Passing options to constructor, get added as "properties"
 
