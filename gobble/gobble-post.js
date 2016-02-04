@@ -16,4 +16,3 @@ post.defaults = {
 
 module.exports = post;
 
-

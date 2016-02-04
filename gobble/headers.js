@@ -8,11 +8,11 @@ function extract ( code, options ) {
 		if ( result.date ) result.date = new Date( result.date );
 		return result;
 	}
-};
+}
 
 function remove ( code ) {
 	return code.replace( regex, '' );
-};
+}
 
 module.exports = { extract, remove };
 

@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:500,300,700);
 @import url(https://fonts.googleapis.com/css?family=Oxygen+Mono);
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
 /* base CSS */
 * {
@@ -17,27 +20,55 @@ html, body {
 */
 
 body {
-  color: rgba(50, 50, 50, .8);
-  background: rgba(176, 196, 222, .5);
+  color: rgba(80, 90, 100, .6);
+  background: rgba(176, 196, 222, .25);
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  padding: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  margin: auto;
+  padding: 0 50px;
+  max-width: 1000px;
+  overflow-x: visible;
+}
 
+/*header, main, footer {
+  margin: auto;
+  max-width: 800px;
+}*/
+
+code:not(.hljs) {
+  color: #666;
+  background: whitesmoke;
+}
+
+pre {
+  position: relative;
+
+  border-left: 25px solid rgba(34, 139, 34, .1);
+  left: -33px;
+  /*
+  margin-right: -48px;
+  border-right: 40px solid rgba(35,65, 47,.03);
+  */
+
+  transition: box-shadow 1.5s;
+}
+
+pre:hover {
+    box-shadow: 1px 2px 10px rgba(35,65, 47,.15);
 }
 
 code.hljs {
   padding: 20px;
-  font-size: 15px;
-  font-family: 'Anonymous Pro', monospace;
-  line-height: 20px;
+  padding-left: 6px;
+  padding-right: 15px;
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.55em;
 }
 
-
-h1, h2 {
+h1, h2, h4 {
 	font-weight: 700
-}
-h3, h4, h5 {
-	font-weight: 500
 }
 
 a {
@@ -65,5 +96,6 @@ li {
 }
 
 footer {
-  margin-top: 50px;
+
+  margin-top: 100px;
 }

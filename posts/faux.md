@@ -10,7 +10,7 @@ At its core, RactiveJS interpolates data into an html template and renders into 
 ```handlebars
 <h1>Hello {{world}}</h1>
 ```
-### +
+<div style='text-align: center;font-size: 30px;'>+</div>
 
 ```javascript
 new Ractive({

@@ -4,7 +4,7 @@
   "description": "simple static blogging site for coders",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/gobble"
+    "start": "gobble"
   },
   "repository": {
     "type": "git",
